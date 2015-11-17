@@ -12,3 +12,6 @@ The library that allows you to use standard laravel traits without redirect, ret
 
 # Traits implemented
 * ResetsPasswords
+
+# Examples
+* [Plunner - dsd-meetme](https://github.com/dsd-meetme/backend)

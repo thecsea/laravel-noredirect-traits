@@ -26,6 +26,13 @@ use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Password;
 
 
+/**
+ * Class ResetsPasswords
+ * @package it\thecsea\laravel\noredirect_traits
+ * @author Claudio Cardinale <cardi@thecsea.it>
+ * @copyright 2015 Claudio Cardinale
+ * @version 1.0.0
+ */
 trait ResetsPasswords
 {
     use ResetsPasswordsTrait{
