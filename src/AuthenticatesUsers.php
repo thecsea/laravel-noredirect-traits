@@ -88,6 +88,8 @@ trait AuthenticatesUsers
     public function getLogout()
     {
         Auth::logout();
+
+        return new JsonResponse([], 200);
     }
 
     /**
