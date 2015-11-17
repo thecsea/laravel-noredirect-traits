@@ -15,3 +15,6 @@ The library that allows you to use standard laravel traits without redirect, ret
 
 # Examples
 * [Plunner - dsd-meetme](https://github.com/dsd-meetme/backend)
+
+
+# By [thecsea.it](http://www.thecsea.it)
