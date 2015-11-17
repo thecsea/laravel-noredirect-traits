@@ -1,8 +1,8 @@
 {
     "name": "thecsea/laravel-noredirect-traits",
     "type": "library",
-    "keywords": ["laravel", "traits", "no redirect"],
-    "description": "The library that allow you to use standard laravel traits without redirect",
+    "keywords": ["laravel", "traits", "no redirect", "json"],
+    "description": "The library that allows you to use standard laravel traits without redirect, returning information via JSON and HTTP code, ideal for REST applications",
     "homepage": "http://www.thecsea.it//",
     "minimum-stability": "stable",
     "license": "GPL-2.0",
