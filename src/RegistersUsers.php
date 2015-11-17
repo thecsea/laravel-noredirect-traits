@@ -57,6 +57,6 @@ trait RegistersUsers
 
         Auth::login($this->create($request->all()));
 
-        return new JsonResponse('', 200);
+        return new JsonResponse([], 200);
     }
 }

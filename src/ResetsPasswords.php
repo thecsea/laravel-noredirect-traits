@@ -56,7 +56,7 @@ trait ResetsPasswords
 
         switch ($response) {
             case Password::RESET_LINK_SENT:
-                return new JsonResponse('', 200);
+                return new JsonResponse([], 200);
 
             case Password::INVALID_USER:
                 return new JsonResponse(['error' => trans($response)],422);
@@ -89,7 +89,7 @@ trait ResetsPasswords
 
         switch ($response) {
             case Password::PASSWORD_RESET:
-                return new JsonResponse('', 200);
+                return new JsonResponse([], 200);
 
             default:
                 return new JsonResponse(['error' => trans($response)],422);

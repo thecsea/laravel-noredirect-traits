@@ -98,7 +98,7 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        return new JsonResponse('', 200);
+        return new JsonResponse([], 200);
     }
 
 }
