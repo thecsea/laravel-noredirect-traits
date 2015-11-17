@@ -19,44 +19,21 @@
 
 namespace it\thecsea\laravel\noredirect_traits;
 
-use Illuminate\Foundation\Auth\RegistersUsers as RegistersUsersOriginal;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Lang;
+use Illuminate\Foundation\Auth\AuthenticatesUsers  as AuthenticatesUsersOriginal;
 
 /**
- * Class RegistersUsers
+ * Class AuthenticatesUsers
  * @package it\thecsea\laravel\noredirect_traits
  * @author Claudio Cardinale <cardi@thecsea.it>
  * @copyright 2015 Claudio Cardinale
  * @version 1.0.0
  */
-trait RegistersUsers
+trait AuthenticatesUsers
 {
 
-    use RegistersUsersOriginal{
-        postRegister as postRegisterOriginal;
-    }
+    use AuthenticatesUsersOriginal;
 
-
-    /**
-     * Handle a registration request for the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function postRegister(Request $request)
-    {
-        $validator = $this->validator($request->all());
-
-        if ($validator->fails()) {
-            $this->throwValidationException(
-                $request, $validator
-            );
-        }
-
-        Auth::login($this->create($request->all()));
-
-        return new JsonResponse('', 200);
-    }
 }
