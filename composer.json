@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "it\\thecsea\\laravel-noredirect-traits\\": "src/"
+            "it\\thecsea\\laravel\\noredirect_traits\\": "src/"
         }
     }
 
