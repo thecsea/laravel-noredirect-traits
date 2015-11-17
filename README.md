@@ -10,5 +10,5 @@ The library that allows you to use standard laravel traits without redirect, ret
 1. Substitute `ResetsPasswords` whit the traits that you want in the file where you need it
 
 
-# Components
+# Traits implemented
 * ResetsPasswords
