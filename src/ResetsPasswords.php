@@ -19,7 +19,7 @@
 
 namespace it\thecsea\laravel\noredirect_traits;
 
-use Illuminate\Foundation\Auth\ResetsPasswords as ResetsPasswordsTrait;
+use Illuminate\Foundation\Auth\ResetsPasswords as ResetsPasswordsOriginal;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Mail\Message;
@@ -35,9 +35,9 @@ use Illuminate\Support\Facades\Password;
  */
 trait ResetsPasswords
 {
-    use ResetsPasswordsTrait{
-        postEmail as postEmailTrait;
-        postReset as postResetTrait;
+    use ResetsPasswordsOriginal{
+        postEmail as postEmailOriginal;
+        postReset as postResetOriginal;
     }
 
     /**
