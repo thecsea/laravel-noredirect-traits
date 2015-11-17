@@ -19,10 +19,9 @@
 
 namespace it\thecsea\laravel\noredirect_traits;
 
+use Illuminate\Foundation\Auth\AuthenticatesUsers as AuthenticatesUsersOriginal;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Lang;
-use Illuminate\Foundation\Auth\AuthenticatesUsers  as AuthenticatesUsersOriginal;
 
 /**
  * Class AuthenticatesUsers
